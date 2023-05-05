@@ -1,23 +1,28 @@
-import logo from './logo.svg';
+import React from 'react';
+import ResponsiveImage from './ResponsiveImage';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>My Gallery</h1>
+      <div className="gallery">
+        <ResponsiveImage
+          src="https://bucheli-web-personal-portfolio-website.netlify.app/images-projects/bucheli-restaurants.jpg"
+          alt="My Photo"
+          className="gallery-image"
+        />
+        <ResponsiveImage
+          src="https://bucheli-web-personal-portfolio-website.netlify.app/images-projects/30-divulgation-books.jpg"
+          alt="My Other Photo"
+          className="gallery-image"
+        />
+        <ResponsiveImage
+          src="https://bucheli-web-personal-portfolio-website.netlify.app/images-projects/my-coding-education-budget.jpg"
+          alt="Yet Another Photo"
+          className="gallery-image"
+        />
+      </div>
     </div>
   );
 }
