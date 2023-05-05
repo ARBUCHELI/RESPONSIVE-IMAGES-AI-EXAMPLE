@@ -1,36 +1,67 @@
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
+div {
+  text-align: center;
 }
 
+h1 {
+  color: white;
+  margin-top: 1.5em;
+  font-size: 3em;
+}
+
+h3 {
+  color: white;
+  margin-bottom: 3em;
+  font-size: 1em;
+}
+
+.gallery {
+  width: 100%;
+}
+
+/* Default styles for the image */
 .gallery-image {
   width: 100%;
   height: auto;
 }
 
-@media (min-width: 576px) {
+/* Styles for small screens */
+@media screen and (max-width: 576px) {
   .gallery-image {
-    width: 50%;
+    /* Set a max width of 100% */
+    max-width: 100%;
   }
 }
 
-@media (min-width: 768px) {
+/* Styles for medium-sized screens */
+@media screen and (min-width: 576px) and (max-width: 768px) {
   .gallery-image {
-    width: 33.33%;
+    /* Set a max width of 50% */
+    max-width: 50%;
   }
 }
 
-@media (min-width: 992px) {
+/* Styles for large screens */
+@media screen and (min-width: 768px) and (max-width: 992px) {
   .gallery-image {
-    width: 25%;
+    /* Set a max width of 33.33% */
+    max-width: 33.33%;
   }
 }
 
-@media (min-width: 1200px) {
+/* Styles for extra large screens */
+@media screen and (min-width: 992px) and (max-width: 1200px) {
   .gallery-image {
-    width: 20%;
+    /* Set a max width of 25% */
+    max-width: 25%;
   }
 }
 
+/* Styles for extra extra large screens */
+@media screen and (min-width: 1200px) {
+  .gallery-image {
+    /* Set a max width of 20% */
+    max-width: 20%;
+  }
+}
 
 

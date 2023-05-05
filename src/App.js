@@ -5,20 +5,21 @@ import './App.css';
 function App() {
   return (
     <div>
-      <h1>My Gallery</h1>
+      <h1>Responsive Image Gallery</h1>
+      <h3>Powered by AI Pair Programming</h3>
       <div className="gallery">
         <ResponsiveImage
-          src="https://bucheli-web-personal-portfolio-website.netlify.app/images-projects/bucheli-restaurants.jpg"
+          src="https://img.freepik.com/free-photo/young-beautiful-woman-holding-macaroons-pastry-her-hands_155003-12171.jpg?size=626&ext=jpg"
           alt="My Photo"
           className="gallery-image"
         />
         <ResponsiveImage
-          src="https://bucheli-web-personal-portfolio-website.netlify.app/images-projects/30-divulgation-books.jpg"
+          src="https://img.freepik.com/free-photo/two-girls-twins-smiling-pointing-fingers-away-blue-wall_176420-17119.jpg?size=626&ext=jpg"
           alt="My Other Photo"
           className="gallery-image"
         />
         <ResponsiveImage
-          src="https://bucheli-web-personal-portfolio-website.netlify.app/images-projects/my-coding-education-budget.jpg"
+          src="https://img.freepik.com/free-photo/cheerful-blonde-twins-big-arrows_329181-10724.jpg?size=626&ext=jpg"
           alt="Yet Another Photo"
           className="gallery-image"
         />

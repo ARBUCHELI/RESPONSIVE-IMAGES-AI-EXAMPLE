@@ -4,23 +4,23 @@ const ResponsiveImage = ({ src, alt, className }) => {
   return (
     <picture>
       <source
-        media="(min-width: 1200px)"
-        srcSet={`${src}-xl.jpg`}
+        //media="(min-width: 1200px)"
+        srcSet={src}
       />
       <source
-        media="(min-width: 992px)"
-        srcSet={`${src}-lg.jpg`}
+        //media="(min-width: 992px)"
+        srcSet={src}
       />
       <source
-        media="(min-width: 768px)"
-        srcSet={`${src}-md.jpg`}
+        //media="(min-width: 768px)"
+        srcSet={src}
       />
       <source
-        media="(min-width: 576px)"
-        srcSet={`${src}-sm.jpg`}
+        //media="(min-width: 576px)"
+        srcSet={src}
       />
       <img
-        src={`${src}-xs.jpg`}
+        src={src}
         alt={alt}
         className={className}
       />
